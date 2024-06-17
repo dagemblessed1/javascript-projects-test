@@ -38,3 +38,4 @@ console.log(daysToMoon);
 
 // Print the results of the trip to the moon below
 "it will take 1600 days to reach the moon"
+
