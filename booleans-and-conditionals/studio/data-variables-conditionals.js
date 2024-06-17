@@ -51,3 +51,15 @@ if (weatherStatus = "clear") {
 }
 // Verify shuttle launch can proceed based on above conditions
 
+date = "Monday 2019-03-18"
+time = "10:05:34 AM";
+astronautCount = 7
+crewMassKg = astronautCount * averageAstronautMassKg;
+fuelMassKg = 760000;
+shuttleMassKg = 74842.31;
+totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
+fuelTempCelsius = -225;
+weatherStatus = "clear";
+
+//All systems are a go! Initiating space shuttle lanch sequence."
+//Wish your astronauts a safe flight!"
