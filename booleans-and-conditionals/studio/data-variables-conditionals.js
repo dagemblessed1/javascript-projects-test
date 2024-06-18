@@ -19,47 +19,73 @@ let preparedForLiftOff = true;
 // add logic below to verify total number of astronauts for shuttle launch does not exceed 7
 
 if (astronautCount <= 7) {
-    console.log ("cleared for liftoff");
+    preparedForLiftOff = true
+    //console.log ("cleared for liftoff");
 }
 
 // add logic below to verify all astronauts are ready
 
 if (astronautStatus = "ready") {
-    console.log ("cleared for liftoff");
+    preparedForLiftOff = true
+    //console.log ("cleared for liftoff");
 }
 // add logic below to verify the total mass does not exceed the maximum limit of 850000
 
 if (totalMassKg < maximumMassLimit) {
-    console.log ("cleared for liftoff");
+    preparedForLiftOff = true
+    //console.log ("cleared for liftoff");
 }
+
 // add logic below to verify the fuel temperature is within the appropriate range of -150 and -300
 
 if (fuelTempCelsius >= -300 || fuelTempCelsius <= -150) {
-    console.log ("cleared for liftoff");
+    preparedForLiftOff = true
+    //console.log ("cleared for liftoff");
 } else {
-    console.log ("abort launch");
+    preparedForLiftOff = false
+    //console.log ("abort launch");
 }
 // add logic below to verify the fuel level is at 100%
 
 if (fuelLevel = "100%") {
-    console.log ("cleared for liftoff" );
+    preparedForLiftOff = true
+    //console.log ("cleared for liftoff" );
 }
 // add logic below to verify the weather status is clear
 
 if (weatherStatus = "clear") {
-    console.log ("cleared for liftoff" );
+    preparedForLiftOff = true
+    //console.log ("cleared for liftoff" );
 }
 // Verify shuttle launch can proceed based on above conditions
 
-date = "Monday 2019-03-18"
-time = "10:05:34 AM";
-astronautCount = 7
-crewMassKg = astronautCount * averageAstronautMassKg;
-fuelMassKg = 760000;
-shuttleMassKg = 74842.31;
-totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
-fuelTempCelsius = -225;
-weatherStatus = "clear";
+if(preparedForLiftOff === true) {
+console.log ("All systems are a go! Initiating space shuttle lanch sequence.");
+console.log ("------------------------------------------------------------------------------");
+console.log("Date: " + date);
+console.log("Time: " + time); 
+console.log("Astronaut Count: " + astronautCount);
+console.log("crew Mass: " + crewMassKg + "kg");
+console.log("Fuel Mass: " + fuelMassKg + "kg");
+console.log("shuttle Mass: " + shuttleMassKg + "kg");
+console.log("total Mass " + totalMassKg + "kg");
+console.log("fuel Tempreature: " + fuelTempCelsius + "°C");
+console.log("weather status: " + weatherStatus);
+console.log ("------------------------------------------------------------------------------");
+console.log ("Wish your astronauts a safe flight!");
+} else { 
+    console.log("Launch Scrubbed")
+}
+
+//"Monday 2019-03-18"
+//time = "10:05:34 AM";
+//astronautCount = 7
+//crewMassKg = astronautCount * averageAstronautMassKg;
+//fuelMassKg = 760000;
+//shuttleMassKg = 74842.31;
+//totalMassKg = crewMassKg + fuelMassKg + shuttleMassKg;
+//fuelTempCelsius = -225;
+//weatherStatus = "clear";
 
 //All systems are a go! Initiating space shuttle lanch sequence."
 //Wish your astronauts a safe flight!"
